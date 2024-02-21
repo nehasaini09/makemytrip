@@ -16,8 +16,6 @@ public class LoginTest extends BaseClass{
 		login.addDates();
 		login.addPhoneandEmail();
 		login.paymentMethod();
-		
-		//login.loginDetails();
 		login.comparePrice();
 		
 	}

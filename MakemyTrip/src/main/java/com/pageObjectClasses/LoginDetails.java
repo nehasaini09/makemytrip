@@ -105,14 +105,10 @@ public class LoginDetails extends BaseClass{
 	    public void passDetails() throws InterruptedException 
 	    {
 	    	 wait.until(ExpectedConditions.jsReturnsValue("return document.readyState === 'complete';"));
-	    	   	 
-	    	// mobileNo.sendKeys("8019205917");	
-	        // email.sendKeys("aryasen09@yahoo.com");
 	         wait.until(ExpectedConditions.elementToBeClickable(continu));
 	         actions.doubleClick(continu).perform();
 	         
 	         Thread.sleep(2000);
-	        // wait.until(ExpectedConditions.visibilityOf(checkbox));
 	         checkbox.click();   
 	          }
 	    

@@ -16,6 +16,6 @@ public class BookFlightTest extends BaseClass{
 	book.clickOnBookBtn();
 	book.getPrice();
 	book.switchWindows();
-	//book.clickOnAddAdult();
+	
 }
 }

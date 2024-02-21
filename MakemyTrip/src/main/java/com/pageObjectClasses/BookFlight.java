@@ -28,10 +28,7 @@ public class BookFlight extends BaseClass{
 	
     @FindBy(xpath="(//div[@class='textRight flexOne'])[1]")
      WebElement totalPrice;
-    
-    //@FindBy(xpath="//button[@class='buttonPrimary buttonBig  lato-black button']")
-	//WebElement bookBtnConfirm;
-    
+       
     @FindBy(xpath="//button[@class='addTravellerBtn']")
     WebElement addAdultBtn;
     
@@ -54,21 +51,11 @@ public class BookFlight extends BaseClass{
     WebElement nationality;
     
     @FindBy(id="react-select-3-option-1")
-    WebElement nationalitySelBtn;
-    
-    @FindBy(xpath="//div[contains(text(),'Passport Issuing Country')]")
-    WebElement passportCountry;
-    
-    @FindBy(id="react-select-8-option-1")
-    WebElement passCountry;
-    
-    @FindBy(xpath="//span//input[@type='checkbox']")
-    WebElement checkBox;
-    
+    WebElement nationalitySelBtn;    
     
     WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(20));
-    JavascriptExecutor script = (JavascriptExecutor) driver;
-    Actions actions = new Actions(driver);
+	  JavascriptExecutor script = (JavascriptExecutor) driver;
+	  Actions actions = new Actions(driver);
     
      public BookFlight() 
      {

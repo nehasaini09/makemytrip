@@ -3,12 +3,15 @@ package com.base;
 import java.io.File;
 import java.time.Duration;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -21,6 +24,7 @@ public class BaseClass {
 	public static ConfigReader config = new ConfigReader();
 	public static String browserName = config.getBrowser();
 	public static String url = config.getUrl();
+	 
 	
 @BeforeTest
 public void intializeBrowser() {
@@ -43,7 +47,7 @@ public void intializeBrowser() {
 
   		@AfterTest
     public void tearDown() {
-    	//driver.quit();
+    	driver.quit();
     }
 
 
